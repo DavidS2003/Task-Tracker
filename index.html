@@ -18,9 +18,26 @@
  <label>Task Deadline:</label>
  <input type="date" id="taskDeadline" required>
  <button type="submit">Add Task</button>
+ <button type="button" id="clearTasks">Clear Tasks</button>
+ <h2>Task List</h2>
 </form>
 <table id="taskTable">
 <!-- Task table content here -->
+ <thead>
+    <tr>
+        <th>Task Name</th>
+        <th>Task Description</th>
+        <th>Task Deadline</th>
+    </tr>
+ </thead>
+ <tbody>
+    
+ </tbody>
+ <tfoot>
+    <tr>
+        <td colspan="3">Total Tasks: ${tasks.length}</td>
+    </tr>
+ </tfoot>
 </table>
 </div>
 <script src="script.js"></script>
